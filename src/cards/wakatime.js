@@ -96,7 +96,7 @@ const createCompactLangNode = ({ lang, x, y, display_format }) => {
  */
 const createLanguageTextNode = ({ langs, y, display_format, card_width }) => {
   const LEFT_X = 25;
-  const RIGHT_X_BASE = 230;
+  const RIGHT_X_BASE = 250;
   const rightOffset = (card_width - DEFAULT_CARD_WIDTH) / 2;
   const RIGHT_X = RIGHT_X_BASE + rightOffset;
 
@@ -460,7 +460,7 @@ const renderWakatimeCard = (stats = {}, options = { hide: [] }) => {
         width: 100%;
       }
     }
-    .lang-name { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor} }
+    .lang-name { font: 700 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor} }
     #rect-mask rect{
       animation: slideInAnimation 1s ease-in-out forwards;
     }
