@@ -178,7 +178,7 @@ const getStyles = ({
 }) => {
   return `
     .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: ${textColor};
+      font: 700 12px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: ${textColor};
     }
     @supports(-moz-appearance: auto) {
       /* Selector detects Firefox */
@@ -503,9 +503,7 @@ const renderStatsCard = (stats, options = {}) => {
 
   const card = new Card({
     customTitle: custom_title,
-    defaultTitle: statItems.length
-      ? i18n.t("statcard.title")
-      : i18n.t("statcard.ranktitle"),
+    defaultTitle: "GitHub Stats",
     width,
     height,
     border_radius,
